@@ -1,10 +1,10 @@
-# 🛡️ HAL Surveillance System
+#  HAL Surveillance System
 
 A comprehensive AI-powered surveillance system with **4 specialized detection models** for multi-modal threat assessment, featuring YOLOv8 primary detection, ResNet50 weapon specialization, thermal imaging, and aerial surveillance capabilities with ESP32-CAM real-time integration.
 
-## 🌟 **4-Model Architecture Overview**
+##  **4-Model Architecture Overview**
 
-### 🧠 **Model 1: YOLOv8s HAL Surveillance (Primary Model)**
+###  **Model 1: YOLOv8s HAL Surveillance (Primary Model)**
 - **Architecture**: YOLOv8s (11.2M parameters) - Production Ready
 - **Location**: `HAL_Model_Weights_FINAL_20250719_091941.pt`
 - **Classes**: **14 Specialized Surveillance Classes**
@@ -25,7 +25,7 @@ A comprehensive AI-powered surveillance system with **4 specialized detection mo
 - **Performance**: mAP@0.5: 91.31%, Precision: 89.74%
 - **Use Case**: Primary threat assessment and surveillance
 
-### 🎯 **Model 2: ResNet50 Weapon Detection (Specialized)**
+###  **Model 2: ResNet50 Weapon Detection (Specialized)**
 - **Architecture**: ResNet50-based models for specific weapon detection
 - **Hardware Integration**: ESP32-CAM real-time processing
 - **Locations**:
@@ -38,7 +38,7 @@ A comprehensive AI-powered surveillance system with **4 specialized detection mo
 - **Use Case**: Detailed weapon identification and threat classification
 - **Performance**: Optimized for edge devices and real-time inference
 
-### �️ **Model 3: YOLOv8 Thermal/IR Camera**
+###  **Model 3: YOLOv8 Thermal/IR Camera**
 - **Architecture**: YOLOv8 optimized for thermal imaging
 - **Location**: `ir_sensor_model.pt`
 - **Classes**: **5 Thermal-Specific Classes**
@@ -50,7 +50,7 @@ A comprehensive AI-powered surveillance system with **4 specialized detection mo
 - **Use Case**: Night vision and thermal surveillance
 - **Advantage**: Works in complete darkness and adverse weather
 
-### 🛩️ **Model 4: Aerial Surveillance YOLOv8**
+###  **Model 4: Aerial Surveillance YOLOv8**
 - **Architecture**: YOLOv8 for aerial/satellite imagery
 - **Location**: `best_aerial_2.pt`
 - **Classes**: **15+ Aerial Detection Classes**
@@ -73,7 +73,7 @@ A comprehensive AI-powered surveillance system with **4 specialized detection mo
 - **Use Case**: Drone surveillance, satellite imagery analysis, large area monitoring
 - **Coverage**: Wide-area surveillance from aerial perspective
 
-## 📡 **ESP32-CAM Integration**
+##  **ESP32-CAM Integration**
 - **Real-time Processing**: WebSocket server for ESP32-CAM devices
 - **Model Backend**: ResNet50-based weapon detection models
 - **Live Monitoring**: Terminal output and video stream monitoring
@@ -82,7 +82,7 @@ A comprehensive AI-powered surveillance system with **4 specialized detection mo
 - **Multi-model Coordination**: Seamless switching between detection models
 - **Edge Computing**: Optimized for low-power ESP32-CAM devices
 
-## � **ResNet50 Technical Details**
+##  **ResNet50 Technical Details**
 
 ### **Architecture Advantages for ESP32-CAM:**
 - **Lightweight**: Optimized ResNet50 variant for edge computing
@@ -106,7 +106,7 @@ A comprehensive AI-powered surveillance system with **4 specialized detection mo
 - **Memory Usage**: <4MB RAM during inference
 - **Supported Resolutions**: 320x240, 640x480, 800x600
 
-## �🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 ```bash
@@ -136,7 +136,7 @@ streamlit run lit.py
 http://localhost:8501
 ```
 
-## 📋 System Requirements
+##  System Requirements
 
 - **Python**: 3.8 or higher
 - **RAM**: 4GB minimum, 8GB recommended
@@ -152,58 +152,58 @@ http://localhost:8501
 - **Programming Cable**: USB-to-Serial adapter for initial setup
 - **Antenna**: External antenna recommended for better range
 
-## 🎛️ **Multi-Model Interface Tabs**
+##  **Multi-Model Interface Tabs**
 
-### 📁 **Upload Images (All 4 Models)**
+###  **Upload Images (All 4 Models)**
 - **Model Selection**: Choose from 4 specialized models
 - **Multi-format Support**: JPG, PNG, MP4, AVI formats
 - **Batch Processing**: Process multiple files simultaneously
 - **Real-time Results**: Confidence scores and bounding boxes
 - **Model Comparison**: Side-by-side model performance
 
-### 📷 **Webcam Detection (Models 1 & 2)**
+###  **Webcam Detection (Models 1 & 2)**
 - **ResNet50 HAL**: Primary threat detection (5 classes)
 - **YOLOv8 RGB**: General object detection (14 classes)
 - **Live Processing**: Real-time overlay and alerts
 - **Dual-Model Mode**: Run both models simultaneously
 - **Performance Metrics**: FPS, inference time, accuracy
 
-### 🌡️ **Thermal Camera (Model 3)**
+###  **Thermal Camera (Model 3)**
 - **IR/Thermal Processing**: YOLOv8 thermal model (5 classes)
 - **Heat Signature Detection**: Human, animal, vehicle thermal detection
 - **Night Vision**: Complete darkness operation
 - **Temperature Analysis**: Heat-based threat assessment
 - **Thermal Overlay**: Heat map visualization
 
-### 🛩️ **Aerial Surveillance (Model 4)**
+###  **Aerial Surveillance (Model 4)**
 - **Drone/Satellite View**: Aerial YOLOv8 model (15+ classes)
 - **Large Area Coverage**: Wide-area surveillance
 - **Infrastructure Detection**: Buildings, vehicles, facilities
 - **Geographic Analysis**: Coordinate-based detection
 - **Flight Path Monitoring**: UAV tracking and analysis
 
-### 📊 **Analytics Dashboard**
+###  **Analytics Dashboard**
 - **4-Model Performance**: Comparative analysis across all models
 - **Detection Statistics**: Per-model accuracy and speed metrics
 - **Threat Assessment**: Multi-model consensus scoring
 - **Historical Trends**: Time-series analysis and patterns
 - **Export Capabilities**: CSV, JSON data export
 
-### ⚙️ **Batch Processing**
+###  **Batch Processing**
 - **Multi-Model Pipeline**: Process with all 4 models
 - **Smart Routing**: Auto-select best model per image type
 - **Progress Tracking**: Real-time processing status
 - **Bulk Analysis**: Large dataset processing
 - **Automated Reports**: Comprehensive detection reports
 
-### 📡 **ESP32 Interfacing**
+###  **ESP32 Interfacing**
 - **Multi-Model Server**: Coordinate all 4 models
 - **Real-time Streaming**: Live ESP32-CAM feed processing
 - **Model Switching**: Dynamic model selection
 - **Alert Coordination**: Multi-model alert fusion
 - **Demo Mode**: Test all models without hardware
 
-## 🔧 Configuration
+##  Configuration
 
 ### Model Settings
 - **Confidence Threshold**: 0.0 - 1.0 (default: 0.25)
