@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['knife']
+
+roboflow:
+  workspace: sri-lanka-technological-campus-zil6s
+  project: knife-detection-ld5cb
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/sri-lanka-technological-campus-zil6s/knife-detection-ld5cb/dataset/1

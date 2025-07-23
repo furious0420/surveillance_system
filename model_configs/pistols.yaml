@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['pistol']
+
+roboflow:
+  workspace: xmltoyolo-8vfdh
+  project: pistols-unk3m
+  version: 1
+  license: MIT
+  url: https://universe.roboflow.com/xmltoyolo-8vfdh/pistols-unk3m/dataset/1

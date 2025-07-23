@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['HumanFinder - v1 2023-11-14 7-28pm']
+
+roboflow:
+  workspace: shahds-workspace
+  project: persons-m5cyo
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/shahds-workspace/persons-m5cyo/dataset/1

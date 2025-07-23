@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['Armed-Person', 'Rifle', 'Unarmed-Person']
+
+roboflow:
+  workspace: udg-e04z4
+  project: armed-person-with-rifle
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/udg-e04z4/armed-person-with-rifle/dataset/3
